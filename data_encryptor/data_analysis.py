@@ -1,4 +1,5 @@
 import os 
+import json
 from cryptography.fernet import Fernet
 dir_path = r'C:\Users\jsivc\Desktop\Programovaní\Python-Data-encryptor\data_encryptor\files'
 path_files = './data_encryptor/files/'
@@ -22,5 +23,20 @@ for path in enumerate(os.listdir(dir_path)):
 
 for data in files_list:
       print(f"----------> [ID] {data[0]} ----------> [file name] {data[1]} [size] ----------> {data[2]}")
+      data = [
+            {"file_name": data[1], "file_size": data[2]},
+        
+      ]
+  
+     
+      with open("./data_encryptor/json_data/files_data.json", "r+") as json_file:
+          # Načíst data ze souboru
+          file_data = json.load(json_file)
+          # Přidat nový řádek
+          file_data.append(data)
+          # Přepisovat soubor s novými daty
+          json_file.seek(0)
+          json.dump(file_data, json_file)
+
 
 
