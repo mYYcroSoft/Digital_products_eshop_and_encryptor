@@ -23,10 +23,9 @@ for path in enumerate(os.listdir(dir_path)):
 
 for data in files_list:
       print(f"----------> [ID] {data[0]} ----------> [file name] {data[1]} [size] ----------> {data[2]}")
-      data = [
-            {"file_name": data[1], "file_size": data[2]},
+      data = {"file_name": data[1], "file_size": data[2]},
         
-      ]
+      
   
      
       with open("./data_encryptor/json_data/files_data.json", "r+") as json_file:
