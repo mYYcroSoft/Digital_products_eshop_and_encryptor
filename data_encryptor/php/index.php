@@ -13,15 +13,23 @@
     <div class="left-bar">
         <div class="bar-title">LUA Encryptor</div>
         <br>
-        <div class="bar-item">Secure check</div>
+        <div class="bar-item" onclick="php_func()">Secure check</div>
         <div class="bar-item">Load files</div>
         <div class="bar-item">Encryptor</div>
     </div>
   
 <div class="load_files">
     <?php 
-    require('functions.php');
+    
+
+    if (isset($_POST['test'])) {
+        echo "AHOJ";
+      }
+
+    include('functions.php');
     load_files()
+
+    
     ?>
     <button id="new-file">Add File</button>
 
@@ -30,5 +38,7 @@
     </div>
 </div>
 
+
+<script src="js/functions.js"></script>
 </body>
 </html>
