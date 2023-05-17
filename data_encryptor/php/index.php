@@ -26,17 +26,27 @@
         echo "AHOJ";
       }
 
-    include('functions.php');
-    load_files()
+
 
     
     ?>
     <button id="new-file">Add File</button>
 
-    <div class="files_list">
+      
 
-    </div>
 </div>
+
+<div class="files_container">
+        <div class="files_container_title">Načtené soubory</div>
+        <div class="files-list" id="files-list">
+        <?php 
+            include('functions.php');
+            load_files()
+        ?>
+        </div>
+    </div>
+    
+    
 
 
 <script src="js/functions.js"></script>

@@ -42,3 +42,84 @@ body{
     position: absolute;
     left: 50%;
 }
+
+.files_container{
+    position: absolute;
+    width: 60%;
+    left: 30%;
+    height: 90%;
+    top: 5%;
+    border-radius: 15px;
+    background-color: rgb(39, 40, 49);
+    text-align: center;
+    
+}
+
+.files_container_title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.files-list{
+    position: relative;
+    
+    width: 95%;
+    height: 80%;
+    left: 5%;
+    text-align: left;
+    overflow-y: scroll;
+   
+}
+
+.file_box{
+    width: 95%;
+    background-color: rgba(20, 22, 32, 0.418);
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.file_name{
+    position: absolute;
+
+    font-weight: 500;
+    margin-left: 10%;
+
+}
+
+.file_size{
+    position: absolute;
+    font-weight: 500;
+    width: 100px;
+    margin-left: 25%;
+}
+
+.file_remove{
+    position: absolute;
+    margin-left: 60%;
+    background-color: rgb(39, 40, 49);
+    border: none;
+    padding: 10px;
+    color: #ff2222;
+    font-size: 15px;
+    
+    border-radius: 5px;
+}
+
+.file_encrypt{
+    position: relative;
+    margin-left: 80%;
+    background-color: rgb(60, 246, 119);
+    border: none;
+    padding: 10px;
+    color: #252525;
+    font-weight: 60;
+    font-size: 15px;
+    border-radius: 5px;
+}
