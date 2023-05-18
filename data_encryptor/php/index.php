@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
     <div class="left-bar">
         <div class="bar-title">PY ENCRYPTOR</div>
         <br>
@@ -27,10 +28,18 @@
       }
 
 
+      if (isset($_POST['action'])){
+    
+        exec('python data_encryptor/remove_file.py' . escapeshellarg(isset($_POST['file_name'])));
+       print_r($out) ;
+     }
+     
 
     
     ?>
-    <button id="new-file">Add File</button>
+
+
+    </div>
 
       
 
@@ -42,10 +51,20 @@
         <?php 
             include('functions.php');
             load_files()
+            
         ?>
+
+
+
         </div>
     </div>
     
+    <form class="upload_cont" action="upload.php" method="post" enctype="multipart/form-data">
+        Vyber textový soubor:
+        <input type="file" name="fileToUpload" id="fileToUpload" class="upload-button">
+       
+        <input type="submit" value="Nahrát soubor" name="submit">
+    </form>
     
 
 
