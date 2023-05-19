@@ -16,8 +16,9 @@ file_name = data_box.querySelector('.file_name').textContent;
 
 console.log(file_name)
 $.ajax({
-    url: 'index.php',
+    url: 'functions.php',
     type: 'post',
+   
     data: {'action': 'remove_file' ,'file_name': file_name},
     success: function(response) { console.log(response); }
 })

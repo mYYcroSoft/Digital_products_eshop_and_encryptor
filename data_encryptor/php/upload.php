@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
     // Pokud je vše v pořádku, uložte soubor na server
     if ($uploadOk == 1) {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
+            header('Location: '. 'index.php');
             echo "Soubor ". basename( $_FILES["fileToUpload"]["name"]). " byl úspěšně nahrán.";
         } else {
             echo "Chyba při nahrávání souboru.";

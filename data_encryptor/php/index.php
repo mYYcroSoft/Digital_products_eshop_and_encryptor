@@ -28,12 +28,6 @@
       }
 
 
-      if (isset($_POST['action'])){
-    
-        exec('python data_encryptor/remove_file.py' . escapeshellarg(isset($_POST['file_name'])));
-       print_r($out) ;
-     }
-     
 
     
     ?>
