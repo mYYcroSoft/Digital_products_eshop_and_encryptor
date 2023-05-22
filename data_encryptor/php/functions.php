@@ -12,7 +12,7 @@ function load_files(){
                         <span class='file_name'>" . $file['file_name'] ."</span>
                         <span class='file_size'>" . $file['file_size'] . "/mb</span>
                         <button  onclick='remove_file(this)' class='file_remove'>Remove</button>
-                        <button class='file_encrypt'>Encrypt</button>
+                        <button  onclick='encrypt_file(this)' class='file_encrypt'>Basic encrypt</button>
                     </div>      
         "; 
       
@@ -23,9 +23,27 @@ function load_files(){
 if (isset($_POST['action'])){
   print_r('This file mame:');
   print_r( $_POST['file_name'] );
-  $out =  shell_exec('python ../remove_file.py 2>&1' . escapeshellarg(isset($_POST['file_name'])));
-
+  $file_name = isset($_POST['file_name']) ? $_POST['file_name'] : '';
+  $file_name_escaped = escapeshellarg($file_name);
+  $command = 'python ../remove_file.py ' . $file_name_escaped . ' 2>&1';
+  $out = shell_exec($command);
+  header("Refresh:0");
   print_r($out);
+  
+}
+
+
+
+if (isset($_POST['action2'])){
+  print_r('This file mame encrypt :');
+  print_r( $_POST['file_name'] );
+  $file_name = isset($_POST['file_name']) ? $_POST['file_name'] : '';
+  $file_name_escaped = escapeshellarg($file_name);
+  $command = 'python ../basic_encrypt.py ' . $file_name_escaped . ' 2>&1';
+  $out = shell_exec($command);
+  header("Refresh:0");
+  print_r($out);
+  
 }
 
 

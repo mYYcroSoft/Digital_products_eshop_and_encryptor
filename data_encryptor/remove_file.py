@@ -4,8 +4,9 @@ import sys
 
 path_files = './data_encryptor/files/'
 
-file_name = sys.argv[1] 
+file_name = str(sys.argv[1])
 
 
-print(file_name)
-#os.remove(f'../files/Ahoj.txt')
+print(f"Python for remove: {file_name}")
+os.remove(f'../files/{file_name}')
+os.remove(f'../keys/{file_name}.key')

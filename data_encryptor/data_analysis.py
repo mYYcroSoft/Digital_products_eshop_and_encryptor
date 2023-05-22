@@ -16,7 +16,7 @@ for path in enumerate(os.listdir(dir_path)):
             my_file.append(path[1])
 
             key = Fernet.generate_key()
-            path_to_key = (f'{path_keys}{path[1]}.key')
+            path_to_key = (f'{path_keys}/{path[1]}.key')
             print(path_to_key)
             with open(path_to_key, 'wb') as filekey:
                  filekey.write(key)

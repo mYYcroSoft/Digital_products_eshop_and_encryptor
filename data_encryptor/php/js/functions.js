@@ -22,5 +22,25 @@ $.ajax({
     data: {'action': 'remove_file' ,'file_name': file_name},
     success: function(response) { console.log(response); }
 })
+location.reload(true);
+
+}
+
+
+function encrypt_file(element){
+    data_box = element.parentNode;
+file_name = data_box.querySelector('.file_name').textContent;
+
+
+console.log(file_name)
+$.ajax({
+    url: 'functions.php',
+    type: 'post',
+   
+    data: {'action2': 'remove_file' ,'file_name': file_name},
+    success: function(response) { console.log(response); }
+    
+})
+location.reload(true);
 
 }
