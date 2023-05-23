@@ -10,36 +10,24 @@
 </head>
 <body>
 
+<div class="alert-list" id="alert-list">
+  
+</div>
+
 
     <div class="left-bar">
         <div class="bar-title">PY ENCRYPTOR</div>
         <br>
-        <div class="bar-item" onclick="php_func()">Secure check</div>
-        <div class="bar-item">Load files</div>
-        <div class="bar-item">Encryptor</div>
+        <div class="bar-item" onclick="open_files()">Files</div>
+        <div class="bar-item" onclick="open_encrypted()">Encrypted</div>
+      
     </div>
   
-<div class="load_files">
-    <?php 
     
-
-    if (isset($_POST['test'])) {
-        echo "AHOJ";
-      }
-
-
-
-    
-    ?>
-
-
-    </div>
-
       
 
-</div>
 
-<div class="files_container">
+<div class="files_container" id="non_encrypted" style="display: block;      ">
         <div class="files_container_title">Načtené soubory</div>
         <div class="files-list" id="files-list">
         <?php 
@@ -47,18 +35,27 @@
             load_files()
             
         ?>
-
-
-
         </div>
+        <form class="upload_cont" action="upload.php" method="post" enctype="multipart/form-data">
+            Vyber textový soubor:
+            <input type="file" name="fileToUpload" id="fileToUpload" class="upload-button">
+           
+            <input type="submit" value="Nahrát soubor" name="submit">
+        </form>
+    </div>
+
+
+
+    <div class="files_container" id="encrypted" style="display: none">
+        <div class="files_container_title">Kodované soubory</div>
+        <div class="files-list" id="files-list">
+        <?php 
+          load_encrypted_files()
+        ?>
+        </div>
+        
     </div>
     
-    <form class="upload_cont" action="upload.php" method="post" enctype="multipart/form-data">
-        Vyber textový soubor:
-        <input type="file" name="fileToUpload" id="fileToUpload" class="upload-button">
-       
-        <input type="submit" value="Nahrát soubor" name="submit">
-    </form>
     
 
 
