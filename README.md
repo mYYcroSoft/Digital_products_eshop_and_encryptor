@@ -12,3 +12,21 @@
 
 ### License 📑
 **Although the source code is public, it is bound by the Mozilla Public License 2.0.!**
+
+---
+
+### UPDATE 0.1 
+[UI]
+> - Přidané uživatelské rozhraní
+> - Na webové stránce můžeme zobrazit encryptované a decryptované data
+> - Zobrazení dat uživateli probíhá na základě ukládání dat do JSON souboru
+> - Přidaná možnost odstranit soubory společně s klíčem
+> - Po přídání souboru se automaticky vygeneruje klič pro soubor 
+
+[Basic encrypt]
+
+> - Systém basic encrypt nabízí primitivní zabezpečení souborů na základě klíče
+> - Používá knihovnu pro ptython cryptography a fernet
+
+
+

@@ -89,6 +89,7 @@ if (isset($_POST['remove_encrypted_files'])){
   $command = 'python ../remove_encrypted.py ' . $file_name_escaped . ' 2>&1';
   $out = shell_exec($command);
   header("Refresh:0");
+    
   print_r($out);
 }
 

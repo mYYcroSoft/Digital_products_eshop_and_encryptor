@@ -23,7 +23,7 @@ for path in enumerate(os.listdir(dir_path)):
 
             my_file.append(os.path.getsize('../files/' + path[1]) / 1000)
             files_list.append(my_file)
-
+    
 
 for data in files_list:
       print(f"----------> [ID] {data[0]} ----------> [file name] {data[1]} [size] ----------> {data[2]}")
