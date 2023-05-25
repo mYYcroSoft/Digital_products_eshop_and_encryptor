@@ -74,7 +74,7 @@ if (isset($_POST['decrypt_file'])){
   $file_name_escaped = escapeshellarg($file_name);
   $command = 'python ../basic_decrypt.py ' .  $file_name_escaped . ' 2>&1';
   $out = shell_exec($command);
-  //header("Refresh:0");
+  header("Refresh:0");
   print_r($out);
   
 }

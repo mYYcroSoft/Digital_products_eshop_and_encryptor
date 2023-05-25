@@ -34,3 +34,23 @@ Path(f"../encrypted_files/{file_name}").rename(f"../files/{file_name}")
 now = datetime.now()
 date = now.strftime("%d/%m/%Y %H:%M")
 
+data = {"file_name": file_name, "key": key, "Date": date},
+
+
+
+
+with open("../json_data/encrypted_files.json", "r+") as json_file:
+    # Načíst data ze souboru
+    file_data = json.load(json_file)
+    
+    # Vytvořit nový seznam bez položek s "file_name" rovným "basic_encrypt.py"
+    updated_data = [item for item in file_data if item[0]["file_name"] != file_name]
+    
+    # Přesunout kurzor na začátek souboru
+    json_file.seek(0)
+    
+    # Zapíše aktualizovaná data zpět do souboru
+    json.dump(updated_data, json_file)
+    
+    # Zkrátit soubor na aktuální pozici kurzoru (pro odstranění případných zbývajících dat)
+    json_file.truncate()
