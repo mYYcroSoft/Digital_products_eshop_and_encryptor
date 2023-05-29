@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 48, 83);
+}
+
+
+.main_container{
+    position: absolute;
+   
+    width: 35%;
+    height: 100%;
+ 
+}
+
+.navbar{
+    position: fixed;
+    background-color: #18122B;
+    height: 50px;
+    padding: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+    width: 35%;
+    left: 0%;
+    top: 10px;
+
+   
+    border-radius: 0px 20px 20px 0px;
+}
+.nav_title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+    padding-right: 100px;
+}
+
+
+.nav_item{
+    position: relative;
+    background-color: #443c6816;
+    padding: 5px;
+    color: #443c68;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login_buttons{
+    position: relative;
+    top: 350px;
+}
+.fa-discord{
+    font-size: 80px;
+    margin-top: 50px;
+}
+.discord_login{
+    position: relative;
+    background-color: #18122B;
+    width: 100%;
+ 
+    text-align: center;
+    height: 250px;
+    top: 50px;
+    border-radius: 15px;
+    box-shadow: #18122B 5px 5px 25px;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+
+}
+.discord_login_text{
+    background-color: #2a2544;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.manual_login{
+    position: relative;
+    background-color: #18122B;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 15px;
+
+    width: 50%;
+    left: 25%;
+    top: 150px;
+    text-align: center;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: #18122B 5px 5px 25px;
+}
+
+
+.side_container{
+    background-color: #18122b6d;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+}
