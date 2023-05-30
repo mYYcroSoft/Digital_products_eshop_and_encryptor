@@ -104,9 +104,12 @@ dist
 .tern-port
 
 
+
+
 # FILES
 .data_encryptor/files/*
 .data_encryptor/encrypted_files/*
 .data_encryptor/keys/*
 data_encryptor/json_data/encrypted_files.json
 data_encryptor/json_data/files_data.json
+*.mp4

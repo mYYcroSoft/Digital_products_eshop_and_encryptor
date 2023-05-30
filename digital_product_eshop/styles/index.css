@@ -1,9 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(57, 48, 83);
+    background-color: rgb(0, 0, 0);
+ 
 }
 
+
+.left_container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.622);
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+}
 
 .main_container{
     position: absolute;
@@ -15,13 +24,13 @@ body {
 
 .navbar{
     position: fixed;
-    background-color: #18122B;
+    background-color: #1a1a1a00;
     height: 50px;
     padding: 10px;
     padding-top: auto;
     padding-bottom: auto;
-    width: 35%;
-    left: 0%;
+    width: 100%;
+    left: 2%;
     top: 10px;
 
    
@@ -32,19 +41,20 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
-    font-size: 35px;
-    padding-right: 100px;
+    font-size: 80px;
+    padding-right: 0px;
 }
 
 
 .nav_item{
     position: relative;
-    background-color: #443c6816;
+    background-color: #28282800;
     padding: 5px;
-    color: #443c68;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 .login_buttons{
     position: relative;
@@ -54,35 +64,62 @@ body {
     font-size: 80px;
     margin-top: 50px;
 }
+
+.discord_login_upper{
+    font-size: 50px;
+    font-weight: 700;
+    
+    
+}
+.discord_login_under_line{
+    position: absolute;
+    background-color: #fff;
+    left: 15%;
+    width: 100%;
+    height: 3px;
+    color: #18122b00;
+}
+
+.nav_bar_items{
+    position: absolute;
+    background-color: #fff;
+    left: 0%;
+    width: 45%;
+    height: 3px;
+}
 .discord_login{
+    font-family: Arial Black;
     position: relative;
-    background-color: #18122B;
+    background-color: #1a1a1a00;
     width: 100%;
  
     text-align: center;
     height: 250px;
     top: 50px;
+    left: 10%;
     border-radius: 15px;
-    box-shadow: #18122B 5px 5px 25px;
+    font-weight: 100;
+  
     color: #fff;
     border-radius: 0px 5px 5px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
+    font-size: 25px;
 
 }
 .discord_login_text{
-    background-color: #2a2544;
+    background-color: #ffffff;
     padding: 5px;
     font-weight: 500;
     border-radius: 5px;
     margin-top: 25px;
     width: 80%;
+    color: #1a1a1a;
     margin-left: 10%;
 }
 
 .manual_login{
     position: relative;
-    background-color: #18122B;
+    background-color: #1a1a1a;
     padding: 5px;
     font-weight: 500;
     border-radius: 15px;
@@ -97,7 +134,7 @@ body {
     padding: 5px;
     font-size: 20px;
     text-transform: uppercase;
-    box-shadow: #18122B 5px 5px 25px;
+    box-shadow: #1a1a1a 5px 5px 25px;
 }
 
 
@@ -107,4 +144,85 @@ body {
     width: 50%;
     right: 0;
     height: 100%;
+    overflow-x: hidden;
+
+    
+}
+.side_container_back_video{
+    position: absolute;
+    overflow: hidden;
+    width: 200%;
+    height: 100%;
+    left: -10%;
+}
+
+#back_video{
+    position: absolute;
+    right: 10%;
+}
+
+.fi-tr-earth-africa{
+    position: absolute;
+    font-size: 400px;
+    color: #fff;
+    font-weight: 100        ;
+}
+
+#earth{
+    position: absolute;
+    bottom: 0%;
+}
+
+.adver-container{
+    position: absolute;
+    background-color: #00000028;
+    width: 50%;
+    height: 200px;
+    top: 80%;
+    left: 5%;
+    text-align: center;
+    z-index: 2;
+
+}
+.adver_tite_title{
+    color: #ffffff;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.adver_marketing_text{
+    position: relative;
+    margin-top: 10px;
+    width: 50%;
+    left: 25%;
+    color: #fff;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.adver_marketing_text_small{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff9d;
+    font-size: 15px;
+}
+
+.adver_marketing_text_buy{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: #1a1a1a;
+    width: 30%;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    left: 35%;
+
 }
