@@ -17,6 +17,15 @@
 **Although the source code is public, it is bound by the Mozilla Public License 2.0.!**
 
 ---
+### UPDATE 0.2
+[UI]
+> - Hlavní webová strána 
+> - Základ pro uživatelské rozhraní 
+> - Discord AUTH
+> - Order ID generator
+> - DB data encryptor
+
+ ![IMAGE](/readme/Screenshot_3.png)
 
 ### UPDATE 0.1 
 [UI]
