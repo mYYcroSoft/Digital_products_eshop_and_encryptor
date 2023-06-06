@@ -12,7 +12,7 @@ function open_orders_page(){
 
 }
 
-$('#pages_container').load(`pages/orders/orders.html`);
+$('#pages_container').load(`pages/assets/assets.html`);
 
 let time = 400
 function open_page(page){
