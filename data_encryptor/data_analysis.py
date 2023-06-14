@@ -1,7 +1,9 @@
 import os 
 import json
 from cryptography.fernet import Fernet
-dir_path = r'C:\Users\jsivc\Desktop\Programovaní\Python-Data-encryptor\data_encryptor\files'
+
+cwd = r'..\files'
+dir_path = cwd
 path_files = '../files'
 path_keys = '../keys'
 files_list = []
