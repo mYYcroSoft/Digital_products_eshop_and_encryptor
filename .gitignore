@@ -103,6 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
+./auth_system/secret.php
 
 
 
@@ -113,3 +114,5 @@ dist
 data_encryptor/json_data/encrypted_files.json
 data_encryptor/json_data/files_data.json
 *.mp4
+auth_system/reqeust.php
+digital_product_eshop/auth_system/secret.php
